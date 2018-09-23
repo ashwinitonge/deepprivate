@@ -60,7 +60,8 @@ You can find dataset and it's Train/Test splits at: deepprivate/dataset/dataset-
 
     1. Feature extraction from the pre-trained networks 
        Requirements: CAFFE, a deep learning framework.
-       extract_to_txt <train|test> <path_to_weight_file> <path_to_model_prototxt> <path_to_csv> <blob_name> <total_no_images>       <output_format> [CPU/GPU] [DEVICE_ID=0]
+       extract_to_txt <train|test> <path_to_weight_file> <path_to_model_prototxt> <path_to_csv> <blob_name> <total_no_images> 
+       <output_format> [CPU/GPU] [DEVICE_ID=0]
        
     2. To Create CSV for the extracted features using Caffe
        Requirements: JAVA
