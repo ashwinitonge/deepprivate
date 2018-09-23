@@ -45,7 +45,7 @@ You can find the features derived from the pre-trained networks at:
     VGG: deepprivate/Features/VGG/pre-trained-features/
     ResNet: deepprivate/Features/ResNet/pre-trained-features/
     
-You can find the probabilities obtained for privacy classes (public or private) using the fine-tuned networks at:
+You can find the probabilities obtained for privacy classes (public and private) using the fine-tuned networks at:
 
     AlexNet: deepprivate/Features/AlexNet/fine-tune/prob/
     GoogLeNet: deepprivate/Features/GoogLeNet/fine-tune/prob/
