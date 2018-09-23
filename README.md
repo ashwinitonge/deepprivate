@@ -4,15 +4,24 @@
 
 This repository contains the code, features, and data for our following papers:
 
-    Ashwini Tonge and Cornelia Caragea. “Image Privacy Prediction Using Deep Features.” In: Proceedings
-    of the 30th American Association for Artificial Intelligence (AAAI 2016), Student Abstract and Poster
-    Program, Phoenix, Arizona, USA, 2016.
-
     Ashwini Tonge and Cornelia Caragea. 2018 “On the Use of Deep Features for Online Image Sharing.”
     In WWW’18 Companion: The 2018 Web Conference Companion, Lyon, France.
+    
+    Ashwini Tonge and Cornelia Caragea. “Image Privacy Prediction Using Deep Features.” In: Proceedings
+    of the 30th American Association for Artificial Intelligence (AAAI 2016), Student Abstract and Poster
+    Program, Phoenix, Arizona, USA, 2016.    
 
 If you find the repository useful for your research, please cite our paper(s):
 
+    @inproceedings{tongemsm18,
+      author    = {Ashwini Tonge and
+                   Cornelia Caragea},
+      title     = {On the Use of ``Deep'' Features for Online Image Sharing},
+      booktitle = {The Web Conference Companion},
+      year      = {2018},
+
+    }
+    
     @inproceedings{DBLP:conf/aaai/TongeC16,
       author    = {Ashwini Tonge and
                    Cornelia Caragea},
@@ -25,13 +34,36 @@ If you find the repository useful for your research, please cite our paper(s):
       biburl    = {http://dblp.uni-trier.de/rec/bib/conf/aaai/TongeC16},
       bibsource = {dblp computer science bibliography, http://dblp.org}
     }
-  
-    @inproceedings{tongemsm18,
-      author    = {Ashwini Tonge and
-                   Cornelia Caragea},
-      title     = {On the Use of ``Deep'' Features for Online Image Sharing},
-      booktitle = {The Web Conference Companion},
-      year      = {2018},
+    
+    
+# Features
 
-    }
+You can find the features derived from the pre-trained networks at:
+
+    AlexNet: deepprivate/Features/AlexNet/pre-trained-features/
+    GoogLeNet: deepprivate/Features/GoogLeNet/pre-trained-features/
+    VGG: deepprivate/Features/VGG/pre-trained-features/
+    ResNet: deepprivate/Features/ResNet/pre-trained-features/
+    
+You can find the probabilities obtained for privacy classes (public or private) using the fine-tuned networks at:
+
+    AlexNet: deepprivate/Features/AlexNet/fine-tune/prob/
+    GoogLeNet: deepprivate/Features/GoogLeNet/fine-tune/prob/
+    VGG: deepprivate/Features/VGG/fine-tune/prob/
+    ResNet: deepprivate/Features/ResNet/fine-tune/prob/
+    
+# Data
+
+You can find dataset and it's Train/Test splits at: deepprivate/dataset/dataset-splits-27k/
+
+# Code
+
+    1. Feature extraction from the pre-trained networks 
+       Requirements: CAFFE, a deep learning framework.
+       extract_to_txt <train|test> <path_to_weight_file> <path_to_model_prototxt> <path_to_csv> <blob_name> <total_no_images>       <output_format> [CPU/GPU] [DEVICE_ID=0]
+       
+    2. To Create CSV for the extracted features using Caffe
+       Requirements: JAVA
+       Java -jar CaffeFeatures.jar feature_file filenames_file privacy_settings_file 
+
 
