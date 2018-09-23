@@ -1,6 +1,6 @@
 ===============================================================================
 
-#Image Privacy Prediction Using Deep Neural Networks
+# Image Privacy Prediction Using Deep Neural Networks
 
 This repository contains the code, features, and data for our following papers:
 
