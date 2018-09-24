@@ -39,8 +39,6 @@ int feature_extraction_pipeline(int argc, char** argv)
     if (argc < num_required_args)
     {
         LOG(ERROR) <<
-                      "\nextract_to_txt -- April 2015\n"
-                      "Edited by: Ashwini Tonge\n"
                       "This program loads a pretrained network and extracts the features to a text file. \n"
                       "\tUsage: \n"
                       "\textract_to_txt <train|test> <path_to_weight_file> <path_to_model_prototxt> <path_to_csv> <blob_name> <total_no_images> <output_format>"
