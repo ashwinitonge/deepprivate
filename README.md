@@ -7,7 +7,7 @@ This repository contains the code, features, and data for our following papers:
     Ashwini Tonge and Cornelia Caragea. 2018 “On the Use of Deep Features for Online Image Sharing.”
     In WWW’18 Companion: The 2018 Web Conference Companion, Lyon, France.
     
-    Ashwini Tonge and Cornelia Caragea. “Image Privacy Prediction Using Deep Features.” In: Proceedings
+    Ashwini Tonge and Cornelia Caragea. 2016 “Image Privacy Prediction Using Deep Features.” In: Proceedings
     of the 30th American Association for Artificial Intelligence (AAAI 2016), Student Abstract and Poster
     Program, Phoenix, Arizona, USA, 2016.    
 
